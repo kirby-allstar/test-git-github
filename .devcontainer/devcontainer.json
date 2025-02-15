@@ -1,0 +1,15 @@
+{
+  "postAttachCommand": "pkill -f 'python -m http.server 8000' || true; python -m http.server 8000",
+  "customizations": {
+    "codespaces": {
+      "openFiles": ["index.html"]
+    }
+  },
+  "portsAttributes": {
+    "8000": {
+      "label": "Udemy-Git",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "forwardPorts": [8000]
+}
